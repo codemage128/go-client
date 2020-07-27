@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listboard">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_number"
+        android:layout_weight="4"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_type"
+        android:layout_weight="3.3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorroom" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_member"
+        android:layout_weight="4"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorkibo" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_white"
+        android:layout_weight="3.3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorclassroom" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_black"
+        android:layout_weight="3.3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorclassroom" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aroom_state"
+        android:layout_weight="3.3"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light" />
+</LinearLayout>

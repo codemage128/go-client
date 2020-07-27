@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/listboard">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/akibo_num"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/akibo_date"
+            android:layout_weight="2.8"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorLastStone" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/akibo_boardtype"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/akibo_wplayer"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/akibo_bplayer"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/akibo_type"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

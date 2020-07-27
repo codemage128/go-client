@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#07a004</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#a7a7a7</color>
+    <color name="colorLastStone">#ff7300</color>
+    <color name="colorBlackHouse">#000000</color>
+    <color name="colorWhiteHouse">#ffffff</color>
+    <color name="colorroom">#16b9d6</color>
+    <color name="colorkibo">#ff6833</color>
+    <color name="colorclassroom">#4c9c03</color>
+    <color name="tab">#806000</color>
+    <color name="basecolor">#fffde4</color>
+    <color name="listbackground">#eae8d1</color>
+    <color name="gameorange">#22662b</color>
+</resources>

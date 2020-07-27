@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <ListView
+        android:id="@+id/kibolist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="true"
+        android:background="@color/basecolor"
+        android:dividerHeight="5dp"
+        android:divider="@color/basecolor"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:longClickable="true"
+        style="@style/AppTheme.AppBarOverlay"/>
+</LinearLayout>

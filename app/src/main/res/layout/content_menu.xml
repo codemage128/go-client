@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayout"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login_background">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/menu_text"
+                android:id="@+id/imageView4"
+                android:layout_weight="2"
+                android:layout_margin="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:textColor="@color/colorLastStone"
+                android:text="World Baduk News"
+                android:textStyle="normal|bold|italic"
+                android:textAlignment="center"
+                android:textAllCaps="true" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+
+            <WebView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/world">
+           </WebView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <Button
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/button16"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Button"
+                            android:onClick="goRoom"
+                            android:background="@drawable/btn_room" />
+
+                        <TextView
+                            android:text="Game Room"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView6"
+                            android:layout_weight="3"
+                            android:textStyle="normal|bold|italic"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorroom"
+                            android:textAllCaps="true"
+                            android:gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/button14"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Button"
+                            android:onClick="goRecord"
+                            android:background="@drawable/btn_kibo" />
+
+                        <TextView
+                            android:text="Kibo Room"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView7"
+                            android:layout_weight="3"
+                            android:textStyle="normal|bold|italic"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorkibo"
+                            android:textAllCaps="true"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/button_classroom"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Button"
+                            android:background="@drawable/btn_classroom" />
+
+                        <TextView
+                            android:text="Classroom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView8"
+                            android:layout_weight="3"
+                            android:textStyle="normal|bold|italic"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorclassroom"
+                            android:textAllCaps="true"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

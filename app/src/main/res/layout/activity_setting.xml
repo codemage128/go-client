@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/basecolor"
+    android:layout_width="match_parent"
+    android:id="@+id/settingLinear"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Color"
+                android:textSize="30sp"
+                android:textColor="@color/colorLastStone" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/choose_first"
+                android:checkedButton="@+id/black">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Black"
+                    android:textSize="15dp"
+                    android:id="@+id/black"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="White"
+                    android:textSize="15dp"
+                    android:id="@+id/white"
+                    android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:textSize="30sp"
+                android:textColor="@color/colorLastStone" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/game_type"
+                android:checkedButton="@+id/leveling_game">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Leveling Game"
+                    android:textSize="15dp"
+                    android:id="@+id/leveling_game"
+                    android:layout_weight="1" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Friendship Game"
+                    android:textSize="15dp"
+                    android:id="@+id/friendship_game"
+                    android:layout_weight="1" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BoardType"
+                    android:textSize="15dp"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_bordertype"
+                    android:layout_weight="1">
+                </Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Handicap"
+                    android:textSize="15dp"
+                    android:layout_weight="1.8"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_handicap"
+                    android:layout_weight="1.5">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Compensation"
+                    android:textSize="15dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_compensation"
+                    android:layout_weight="1.5">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/colorroom"
+                android:textSize="30sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <RadioGroup
+                    android:layout_height="match_parent"
+                    android:id="@+id/time_type"
+                    android:checkedButton="@+id/short_time"
+                    android:layout_width="wrap_content">
+
+                    <RadioButton
+                        android:layout_height="match_parent"
+                        android:text="Short"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/short_time"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Long"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/long_time"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:text="Normal"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/normal_time"
+                        android:layout_weight="1" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="OverTime"
+                            android:id="@+id/textView2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Overing Counting Time"
+                            android:id="@+id/textView3"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Overing Counting Count"
+                            android:id="@+id/textView4"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="textStart" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spinner_time"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spinner_overtime"
+                            android:layout_weight="1"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentRight="false" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spinner_count"
+
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:id="@+id/setting_ok"
+                android:text="OK"
+                android:onClick="Accept"
+                android:layout_weight="1.5"
+                android:background="@color/basecolor"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorclassroom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/setting_cancel"
+                android:text="Cancel"
+                android:onClick="setting_cancel"
+                android:layout_weight="1.5"
+                android:textColor="@color/colorclassroom"
+                android:background="@color/basecolor"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

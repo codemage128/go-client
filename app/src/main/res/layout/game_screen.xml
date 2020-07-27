@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/game_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_game"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_board"
+        android:background="@color/colorBlackHouse">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/game_state"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@color/basecolor"
+            android:layout_weight="4.8"
+            android:background="@color/gameorange"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.4"
+            android:background="@color/colorBlackHouse">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/game_userbg"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/white_stone"
+                        android:id="@+id/imageView9"
+                        android:layout_weight="2"
+                        android:layout_margin="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/game_infobg"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_wplayer"
+                        android:layout_weight="3"
+                        android:textStyle="normal|bold"
+                        android:gravity="center"
+                        android:textColor="@color/common_plus_signin_btn_text_dark_default" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView_total_time"
+                            android:layout_weight="2"
+
+                            android:gravity="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView_count_time"
+                                android:layout_weight="1"
+
+                                android:gravity="center"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_l1"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_l2"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_l3"
+                                    android:layout_weight="1" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_l4"
+                                    android:layout_weight="1" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_l5"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView_dead_count"
+                            android:layout_weight="3"
+
+                            android:gravity="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:background="@drawable/game_userbg">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/game_infobg"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_bplayer"
+                        android:layout_weight="3"
+                        android:textStyle="normal|bold"
+
+                        android:gravity="center"
+                        android:textColor="@color/colorWhiteHouse" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView_total_time_r"
+                            android:layout_weight="2"
+
+                            android:gravity="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView_count_time_r"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textColor="@color/colorWhiteHouse" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_1"
+                                    android:layout_weight="1"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_2"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_3"
+                                    android:layout_weight="1" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_4"
+                                    android:layout_weight="1" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/live"
+                                    android:id="@+id/imageView_5"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView16"
+                            android:layout_weight="3"
+
+                            android:gravity="center"
+                            android:textColor="@color/colorWhiteHouse" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/black_stone"
+                        android:id="@+id/imageView8"
+                        android:layout_weight="2"
+                        android:layout_margin="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_board"
+                android:background="@color/colorBlackHouse">
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.3"
+            android:background="@color/gameorange"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:id="@+id/scroll_kibo">
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/seekBar"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button_backward"
+                        android:layout_weight="3"
+                        android:background="@drawable/btn_backward"
+                        android:layout_margin="10dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button_autoward"
+                        android:layout_weight="3"
+                        android:background="@drawable/btn_auto"
+                        android:layout_margin="5dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button_forward"
+                        android:layout_weight="3"
+                        android:background="@drawable/btn_forward"
+                        android:layout_margin="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="2">
+                <Button
+                    android:text="PASS"
+                    android:onClick="Game_Pass"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_pass"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:background="@color/gameorange" />
+                <Button
+                    android:text="resign"
+                    android:onClick="Resign"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_pass_1"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:background="@color/gameorange"
+                    android:textColor="@color/colorWhiteHouse" />
+
+                <Button
+                    android:text="RERACT"
+                    android:onClick="Game_Retract"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_retract"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:background="@color/gameorange"
+                    android:textColor="@color/colorWhiteHouse" />
+
+                <Button
+                    android:text="Count"
+                    android:onClick="Game_Counting_Home"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button6"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:background="@color/gameorange"
+                    android:textColor="@color/colorWhiteHouse" />
+                <Button
+                    android:text="analys"
+                    android:onClick="Game_Analize"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button7"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:layout_width="match_parent"
+                    android:background="@color/gameorange"
+                    android:textColor="@color/colorWhiteHouse" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
